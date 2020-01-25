@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Todo List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="todo_list.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-11 my-2">
+                <input type="text" id="todo-input" class="form-control" placeholder="Add your new entry">
+            </div>
+            <div class="col-lg-1 my-2 mx-auto">
+                <button id="create-todo" class="btn btn-primary">Add</button>
+            </div>
+
+            <div class="col-lg-3 my-2 mx-auto">
+                <button id="show-all" class="btn btn-primary">Show All Items</button>
+            </div>
+            <div class="col-lg-3 my-2 mx-auto">
+                <button id="show-pending" class="btn btn-primary">Show Pending Items</button>
+            </div>
+            <div class="col-lg-3 my-2 mx-auto">
+                <button id="show-completed" class="btn btn-primary">Show Completed Items</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-9">
+                <ul class="list-group" id="todo-list-items"></ul>
+            </div>
+            <div class="col-lg-3">
+                <ul class="list-group" id="remove-buttons"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+
+</html>
